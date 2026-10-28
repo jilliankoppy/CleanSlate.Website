@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An educational concept website for Clean Slate, a gluten-free cafe and coffee shop in Fairfield, Connecticut.">
+  <title>Clean Slate | Fairfield Cafe</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="education-banner" role="note">
+    This website was created for educational purposes only and does not represent or reflect the official website of the business.
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Clean Slate home">
+      <img src="assets/clean-slate-logo.webp" alt="Clean Slate">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span></span>
+      <span></span>
+      <span class="sr-only">Open navigation</span>
+    </button>
+
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <a href="#story">Our story</a>
+      <a href="#menu">Menu</a>
+      <a href="#mood">Find your order</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <a
+      class="header-cta"
+      href="https://cleanslateffld.com/menu"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View full menu <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Coffee · smoothies · feel-good food</p>
+
+        <h1>
+          A fresh start,<br>
+          <em>served daily.</em>
+        </h1>
+
+        <p class="hero-intro">
+          Clean, gluten-free and seed oil-free food and drinks—made with
+          thoughtful ingredients in the heart of Fairfield.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-dark" href="#menu">Explore the menu</a>
+
+          <a class="text-link" href="#visit">
+            Plan your visit <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="image-frame hero-image">
+          <img
+            src="assets/matcha.webp"
+            alt="Iced strawberry matcha from Clean Slate"
+          >
+        </div>
+
+        <div class="hero-note note-one">
+          100%<br>
+          <span>gluten-free</span>
+        </div>
+
+        <div class="hero-note note-two">
+          made with<br>
+          <span>good energy</span>
+        </div>
+
+        <div class="leaf-doodle" aria-hidden="true">✣</div>
+      </div>
+    </section>
+
+    <section class="ingredient-marquee" aria-label="Clean Slate values">
+      <div class="marquee-track">
+        <span>Thoughtful ingredients</span>
+        <b>✦</b>
+        <span>Seed oil-free</span>
+        <b>✦</b>
+        <span>Mostly plant-based</span>
+        <b>✦</b>
+        <span>House-made syrups</span>
+        <b>✦</b>
+
+        <span aria-hidden="true">Thoughtful ingredients</span>
+        <b aria-hidden="true">✦</b>
+        <span aria-hidden="true">Seed oil-free</span>
+        <b aria-hidden="true">✦</b>
+        <span aria-hidden="true">Mostly plant-based</span>
+        <b aria-hidden="true">✦</b>
+        <span aria-hidden="true">House-made syrups</span>
+        <b aria-hidden="true">✦</b>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="story-heading reveal">
+        <p class="section-label">01 · A clean slate</p>
+
+        <h2>
+          Fresh space.<br>
+          Familiar heart.
+        </h2>
+      </div>
+
+      <div class="story-copy reveal">
+        <p class="large-copy">
+          After years of serving Fairfield as Catch a Healthy Habit, this
+          local cafe began a new chapter on Sherman Street—expanding its
+          menu while keeping clean ingredients and community at the center.
+        </p>
+
+        <p>
+          Come by for a quick coffee, a colorful smoothie, a relaxed lunch
+          or something nourishing to take on the go.
+        </p>
+      </div>
+
+      <div class="story-stamp reveal" aria-label="Located in downtown Fairfield">
+        <span>Fairfield</span>
+        <strong>CT</strong>
+        <span>06824</span>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-intro reveal">
+        <div>
+          <p class="section-label">02 · The good stuff</p>
+
+          <h2>
+            Pick your<br>
+            <em>favorite.</em>
+          </h2>
+        </div>
+
+        <p>
+          Browse a few Clean Slate favorites by category. Every selection
+          below comes from the cafe’s current menu.
+        </p>
+      </div>
+
+      <div class="filter-bar reveal" role="group" aria-label="Filter menu categories">
+        <button
+          class="filter-button active"
+          type="button"
+          data-filter="all"
+          aria-pressed="true"
+        >
+          All
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="sip"
+          aria-pressed="false"
+        >
+          Sip
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="blend"
+          aria-pressed="false"
+        >
+          Blend
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="eat"
+          aria-pressed="false"
+        >
+          Eat
+        </button>
+      </div>
+
+      <div class="menu-grid" aria-live="polite">
+        <article class="menu-card sage reveal" data-category="sip">
+          <div class="menu-image">
+            <img
+              src="assets/coffee.webp"
+              alt="Hot coffee from the Clean Slate coffee bar"
+            >
+          </div>
+
+          <div class="menu-card-copy">
+            <p class="card-kicker">Coffee bar</p>
+            <h3>Something cozy</h3>
+            <p>Latte · cappuccino · cortado · mocha · cold brew</p>
+            <span>House-made syrups available</span>
+          </div>
+        </article>
+
+        <article class="menu-card olive reveal" data-category="sip">
+          <div class="menu-image">
+            <img
+              src="assets/matcha.webp"
+              alt="Iced matcha drink from Clean Slate"
+            >
+          </div>
+
+          <div class="menu-card-copy">
+            <p class="card-kicker">Matcha &amp; elixirs</p>
+            <h3>Green energy</h3>
+            <p>Matcha · golden elixir · chai latte · hot chocolate</p>
+            <span>Dairy or plant-based milk</span>
+          </div>
+        </article>
+
+        <article class="menu-card stone reveal" data-category="blend">
+          <div class="menu-image">
+            <img
+              src="assets/smoothie.webp"
+              alt="Three colorful fruit smoothies from Clean Slate"
+            >
+          </div>
+
+          <div class="menu-card-copy">
+            <p class="card-kicker">Smoothies</p>
+            <h3>Blend happy</h3>
+            <p>Funky Monkey · Grateful Green · Blueberry Dream</p>
+            <span>Fruit, greens &amp; clean add-ins</span>
+          </div>
+        </article>
+
+        <article class="menu-card brown reveal" data-category="eat">
+          <div class="menu-image">
+            <img
+              src="assets/toasts.webp"
+              alt="Gluten-free avocado and smoked salmon toasts from Clean Slate"
+            >
+          </div>
+
+          <div class="menu-card-copy">
+            <p class="card-kicker">Toast &amp; more</p>
+            <h3>Stay awhile</h3>
+            <p>Avocado toast · smoked salmon toast · flatbreads</p>
+            <span>Gluten-free, always</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mood section" id="mood">
+      <div class="mood-panel reveal">
+        <div class="mood-copy">
+          <p class="section-label">03 · A little menu magic</p>
+
+          <h2>
+            What’s your<br>
+            cafe mood?
+          </h2>
+
+          <p>
+            Choose your vibe and we’ll suggest a Clean Slate pairing.
+          </p>
+
+          <div class="mood-buttons" role="group" aria-label="Choose your cafe mood">
+            <button type="button" data-mood="energized">Energized</button>
+            <button type="button" data-mood="cozy">Cozy</button>
+            <button type="button" data-mood="refreshed">Refreshed</button>
+            <button type="button" data-mood="hungry">Hungry</button>
+          </div>
+        </div>
+
+        <div class="recommendation" id="recommendation" aria-live="polite">
+          <p class="recommendation-label">Your pairing</p>
+          <div class="recommendation-icon" aria-hidden="true">☕</div>
+          <h3>Pick a mood above</h3>
+          <p>There’s a feel-good order waiting for you.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="visit-card reveal">
+        <p class="section-label">04 · Come say hi</p>
+
+        <h2>
+          Meet us on<br>
+          Sherman Street.
+        </h2>
+
+        <div class="visit-details">
+          <div>
+            <p class="detail-label">Location</p>
+
+            <p>
+              116 Sherman Street<br>
+              Fairfield, CT 06824
+            </p>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=116+Sherman+Street+Fairfield+CT+06824"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get directions ↗
+            </a>
+          </div>
+
+          <div>
+            <p class="detail-label">Hours</p>
+
+            <p>
+              Monday–Friday · 8am–4pm<br>
+              Saturday–Sunday · 9am–3pm
+            </p>
+          </div>
+
+          <div>
+            <p class="detail-label">Call</p>
+            <p><a href="tel:+12032928190">(203) 292-8190</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="visit-side reveal">
+        <p>
+          Fresh drinks.<br>
+          Clean bites.<br>
+          Good company.
+        </p>
+
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/cleanslateffld/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram ↗
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@cleanslateffld"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TikTok ↗
+          </a>
+
+          <a
+            href="https://cleanslateffld.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Official site ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/clean-slate-logo.webp" alt="Clean Slate">
+
+      <p>
+        An educational website concept created for Fairfield University.
+      </p>
+    </div>
+
+    <p>© <span id="year"></span> Educational concept</p>
+
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
